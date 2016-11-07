@@ -3,7 +3,6 @@ var elements = require("../lib/elements");
 var directions = require("../lib/directions");
 
 var PF = require('pathfinding');
-var _ = require("lodash");
 
 
 // Give your bot a name!
@@ -32,10 +31,10 @@ try {
      });
   });
 
-   //defind finder
+   //define finder
    var finder = new PF.AStarFinder();
 
-   //defind start and end
+   //define start and end
    var apple = game.board.apple;
    var head = player.snake.getHead();
 
